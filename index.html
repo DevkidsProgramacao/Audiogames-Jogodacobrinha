@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>jogo da cobrinha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html, body {margin: 0; height: 100%; overflow: hidden}
+    </style>
 </head>
 <body>
-   
- <iframe src="https://scratch.mit.edu/projects/1043030806/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-
+    <iframe id="content" src="https://scratch.mit.edu/projects/1043030806/embed">
+        </iframe>
 </body>
 </html>
+
+<script>
+    window.onload = (event) => {
+        var widthPage = document.getElementsByTagName('body')[0].clientWidth;
+        var heightPage = document.getElementsByTagName('body')[0].clientHeight;
+
+        document.getElementById('content').style.height = heightPage + "px";
+        document.getElementById('content').style.width = widthPage + "px";
+    };
+
+</script>
